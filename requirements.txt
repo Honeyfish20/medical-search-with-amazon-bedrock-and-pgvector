@@ -1,0 +1,27 @@
+# 核心UI框架
+gradio>=4.19.2  # 使用最新安全版本
+fastapi==0.95.2  # 与 gradio 兼容
+pydantic==1.10.13  # 与 fastapi 0.95.x 兼容
+
+# 数据处理和科学计算
+numpy>=1.24.3
+faiss-cpu==1.7.4
+
+# AWS SDK
+boto3>=1.28.0
+botocore>=1.31.0
+urllib3>=1.25.4,<1.27  # 固定版本以兼容 awscli
+
+# 数据库连接
+psycopg2-binary==2.9.9
+
+# Web服务器
+uvicorn>=0.15.0
+
+# 其他依赖
+python-dateutil<=2.8.2  # 固定版本以兼容 awscli
+requests>=2.25.1
+python-multipart>=0.0.5
+
+# 环境变量管理
+python-dotenv>=1.0.0
